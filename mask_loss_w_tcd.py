@@ -19,7 +19,7 @@ download_dict = {loss_loc: loss_tile, tcd_loc: tcd_tile}
 for source, new_name in download_dict.iteritems():
     source = source.format(tile_id)
     new_name = new_name.format(tile_id)
-    cmd = ['wget', source, '-o', new_name]
+    cmd = ['wget', source, '-O', new_name]
     
     print cmd
     
@@ -27,7 +27,14 @@ for source, new_name in download_dict.iteritems():
            
            
 # gdal calc statement to create raster of loss at 30
+calc = '--calc=A*(B>30)'
 
+masked_loss =  "{0}_loss_at_30tcd.tif".format(tile_id)
+outfile = '--outfile={}'.format(masked_loss)
+
+cmd = ['gdal_calc.py', '-A', loss_tile, '-B', tcd_tile, calc, outfile, '--NoDataValue=0', '--co', 'COMPRESS=LZW']
+
+subprocess.check_call(cmd)
 # move up raster to new location on s3
 
 # delete loss and tcd raster
