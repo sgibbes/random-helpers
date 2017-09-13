@@ -35,7 +35,14 @@ outfile = '--outfile={}'.format(masked_loss)
 cmd = ['gdal_calc.py', '-A', loss_tile, '-B', tcd_tile, calc, outfile, '--NoDataValue=0', '--co', 'COMPRESS=LZW']
 
 subprocess.check_call(cmd)
+
 # move up raster to new location on s3
+s3_location = 's3://gfw2-data/forest_change/hansen_2016_masked_30tcd/'
+
+subprocess.check_call(['aws', 's3', 'mv', masked_loss, s3_location])
 
 # delete loss and tcd raster
+subprocess.check_call(['rm', loss_tile])
+subprocess.check_call(['rm', tcd_tile])
+
 
