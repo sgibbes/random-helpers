@@ -29,7 +29,9 @@ def make_mosaic(data_type_list):
             mosaic_name = os.path.join(gdb_name, data_type)
             rastype = "Raster Dataset"
             path_to_files = os.path.join(dirname, data_type)
-
+            print mosaic_name
+            print rastype
+            print path_to_files
             arcpy.AddRastersToMosaicDataset_management(mosaic_name, rastype, path_to_files)
             
             
@@ -38,13 +40,14 @@ def download_url(url_source, tile_id, name):
         os.mkdir(os.path.join(dirname, name))
     url_dest = os.path.join(dirname, name, '{0}_{1}.tif'.format(tile_id, name))
     print "downloading {0} for {1}".format(name, tile_id)
-    urllib.urlretrieve(url_source, url_dest)
+
+    urllib.urlretrieve(url_source.format(tile_id), url_dest)
     
 def download_aws(source, tile_id, name):
     if not os.path.exists(os.path.join(dirname, name)):
         os.mkdir(os.path.join(dirname, name))
     dest = os.path.join(dirname, name, '{1}_{0}.tif'.format(name, tile_id))
-    cmd = ['aws', 's3', 'cp', source, dest]
+    cmd = ['aws', 's3', 'cp', source.format(tile_id), dest]
     print "downloading {0} for {1}".format(name, tile_id)
     subprocess.check_call(cmd)
 
@@ -69,7 +72,7 @@ def download_tiles(args):
         
     # tcd tile
     if tcd:
-    
+
         url_source = file_source_dict['tcd']
         download_url(url_source, tile_id, 'tcd')
         data_type_list.append('tcd')
@@ -78,14 +81,15 @@ def download_tiles(args):
     if biomass:
     
         url_source = file_source_dict['biomass']
-        download_aws(source, tile_id, 'biomass')
+        download_aws(url_source, tile_id, 'biomass')
         data_type_list.append('biomass')
         
     # area tile
     if area:
     
         url_source = file_source_dict['area']
-        download_aws(source, tile_id, 'area')
+
+        download_aws(url_source, tile_id, 'area')
         data_type_list.append('area')
     
     
