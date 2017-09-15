@@ -29,9 +29,7 @@ def make_mosaic(data_type_list):
             mosaic_name = os.path.join(gdb_name, data_type)
             rastype = "Raster Dataset"
             path_to_files = os.path.join(dirname, data_type)
-            print mosaic_name
-            print rastype
-            print path_to_files
+
             arcpy.AddRastersToMosaicDataset_management(mosaic_name, rastype, path_to_files)
             
             
