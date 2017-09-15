@@ -59,7 +59,7 @@ def download_tiles(args):
     biomass = args.biomass
     create_mosaic = args.create_mosaic
     
-    file_source_dict = {'loss':'https://storage.googleapis.com/earthenginepartners-hansen/GFC-2015-v1.3/Hansen_GFC-2015-v1.3_lossyear_{}.tif', 'tcd':'https://storage.googleapis.com/earthenginepartners-hansen/GFC-2015-v1.3/Hansen_GFC-2015-v1.3_treecover2000_{}.tif', 'biomass': 's3://WHRC-carbon/global_27m_tiles/final_global_27m_tiles/biomass_10x10deg/{}_biomass.tif', 'area': 's3://gfw2-data/analyses/area_28m/hanson_2013_area_{}.tif'}
+    file_source_dict = {'loss':'http://glad.geog.umd.edu/Potapov/GFW_2016/tiles_2016/{}.tif', 'tcd':'https://storage.googleapis.com/earthenginepartners-hansen/GFC-2015-v1.3/Hansen_GFC-2015-v1.3_treecover2000_{}.tif', 'biomass': 's3://WHRC-carbon/global_27m_tiles/final_global_27m_tiles/biomass_10x10deg/{}_biomass.tif', 'area': 's3://gfw2-data/analyses/area_28m/hanson_2013_area_{}.tif'}
     
     # loss tile:
     if loss:
