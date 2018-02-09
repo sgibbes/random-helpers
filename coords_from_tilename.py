@@ -17,3 +17,6 @@ def coords(tile_id):
     xmax = str(int(xmin) + 10)
     
     return ymax, xmin, ymin, xmax
+    
+    
+print coords('50N_100W')
