@@ -12,7 +12,7 @@ def main():
     args = parser.parse_args()
     for mosaic in ['tcd', 'area', 'loss', 'emissions']:
         print "building mosaic for {}".format(mosaic)
-        path_dict = {'tcd': r'S:\treecoverdensity_2000', 'area': r'S:\area_tiles', 'loss': r'S:\lossdata_2001_2014', 'emissions': r'S:\biomass\mtc02'}
+        path_dict = {'tcd': r'S:\treecoverdensity_2000', 'area': r'S:\area_tiles', 'loss': r'S:\lossdata_2001_2014', 'emissions': r'S:\biomass\final_tiles_080917'}
         out_cs = arcpy.SpatialReference(4326)
         arcpy.CreateMosaicDataset_management (args.geodatabase, mosaic, out_cs)
 
