@@ -1,4 +1,5 @@
 import subprocess
+import os
 
 def mask_raster(tileid):
 
@@ -13,7 +14,7 @@ def mask_raster(tileid):
         print 'downloading {}'.format(source.format(tileid))
         copy_cmd = ['aws', 's3', 'cp', source.format(tileid), '.']
 
-        #subprocess.check_call(copy_cmd)
+        subprocess.check_call(copy_cmd)
 
     #mask tcd by 30 and high carbon
     calc = '(A>{}) * B'.format(thresh)
@@ -23,14 +24,15 @@ def mask_raster(tileid):
 
     cmd = ['gdal_calc.py', '-A', tcd_tif.format(tileid), '-B', raster.format(tileid), '--cal={}'.format(calc)]
     cmd += ['NoDataValue=255', '--co', 'COMPRESS=LZW', '--outfile={}'.format(raster_threshed)]
-    print raster
-    print raster_threshed
+
     print "calculating..."
-    #subprocess.check_call(cmd)
+    subprocess.check_call(cmd)
     print "done!"
 
     #upload to s3
-    cmd = ['aws', 's3', 'cp', raster_threshed, s3_outfile]
-    # subprocess.check_call(cmd)
+    cmd = ['aws', 's3', 'mv', raster_threshed, s3_outfile]
+    subprocess.check_call(cmd)
 
-mask_raster('00N_000E')
+    # remove tiles
+    for tile in [tcd_tif.format(tileid), raster]:
+        os.remove(tile)
