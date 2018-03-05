@@ -2,6 +2,7 @@ import subprocess
 import os
 import boto
 
+import util
 
 def mask_raster(tileid):
     carbon_pool = 'carbon' # options: carbon, bgc, deadwood, soil, litter, totalc
@@ -42,3 +43,6 @@ def mask_raster(tileid):
         # remove tiles
         for tile in [tcd_tif.format(tileid), raster]:
             os.remove(tile)
+    else:
+        print "already exists"
+
