@@ -5,13 +5,13 @@ import boto
 import util
 
 def mask_raster(tileid):
-    carbon_pool = 'carbon' # options: carbon, bgc, deadwood, soil, litter, totalc
+    carbon_pool = 'deadwood' # options: carbon, bgc, deadwood, soil, litter, totalc
     tcd_tif = 'Hansen_GFC2014_treecover2000_{}.tif'
-    raster = '{}_carbon.tif'.format(tileid)
+    raster = '{0}_{1}.tif'.format(tileid, carbon_pool)
     thresh = 30
     tcd_tile = 's3://gfw2-data/forest_cover/2000_treecover/{}'.format(tcd_tif)
-    raster_tile = 's3://gfw-files/sam/carbon_budget/carbon_030218/carbon/{}'.format(raster)
-    s3_outfile = 's3://gfw-files/sam/carbon_budget/carbon_030218/30tcd/carbon/tif/'
+    raster_tile = 's3://gfw-files/sam/carbon_budget/carbon_030218/{0}/{1}'.format(carbon_pool, raster)
+    s3_outfile = 's3://gfw-files/sam/carbon_budget/carbon_030218/30tcd/{}/tif/'.format(carbon_pool)
     failed = False
     # check if masked raster exists
     if not util.check_output_exists(tileid, carbon_pool):

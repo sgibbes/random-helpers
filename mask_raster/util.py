@@ -7,7 +7,7 @@ bucket = conn.get_bucket('gfw-files')
 
 def check_output_exists(tileid, carbon_pool):
 
-    prefix = 'sam/carbon_budget/carbon_030218/30tcd/carbon/tif/'
+    prefix = 'sam/carbon_budget/carbon_030218/30tcd/{}/tif/'.format(carbon_pool)
 
     full_path_list = [key.name for key in bucket.list(prefix='{}'.format(prefix))]
 
