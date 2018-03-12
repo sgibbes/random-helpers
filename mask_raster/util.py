@@ -15,3 +15,17 @@ def check_output_exists(tileid, carbon_pool):
     carbon_tile = '{0}_{1}_30tcd.tif'.format(tileid, carbon_pool)
 
     return carbon_tile in filename_only_list
+
+def get_min_max(tif):
+    gtif = gdal.Open(tif)
+    srcband = gtif.GetRasterBand(1)
+    stats = srcband.GetStatistics(True, True)
+    min_val = stats[0]
+    max_val = stats[1]
+
+    if min_val < 1000 < max_val:
+        valid_raster = True
+    else:
+        valid_rater = False
+
+    return valid_raster

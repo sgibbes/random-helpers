@@ -5,7 +5,7 @@ import boto
 import util
 
 def mask_raster(tileid):
-    carbon_pool = 'deadwood' # options: carbon, bgc, deadwood, soil, litter, totalc
+    carbon_pool = 'soil' # options: carbon, bgc, deadwood, soil, litter, totalc
     tcd_tif = 'Hansen_GFC2014_treecover2000_{}.tif'
     raster = '{0}_{1}.tif'.format(tileid, carbon_pool)
     thresh = 30
@@ -38,9 +38,17 @@ def mask_raster(tileid):
             subprocess.check_call(cmd)
             print "done!"
 
-            #upload to s3
-            cmd = ['aws', 's3', 'mv', raster_threshed, s3_outfile]
-            subprocess.check_call(cmd)
+            valid_raster = util.get_min_max(raster_threshed)
+
+            if valid_raster:
+                #upload to s3
+                cmd = ['aws', 's3', 'mv', raster_threshed, s3_outfile]
+                subprocess.check_call(cmd)
+
+                write_cmd = ['touch', '{}_good.txt'.format(tileid)]
+            else:
+                write_cmd = ['touch', '{}_bad.txt'.format(tileid)]
+            subprocess.check_call(write_cmd)
 
             # remove tiles
             for tile in [tcd_tif.format(tileid), raster]:
@@ -48,4 +56,3 @@ def mask_raster(tileid):
     else:
         print "already exists"
         subprocess.check_call(['touch', '{}_exists.txt'.format(tileid)])
-
