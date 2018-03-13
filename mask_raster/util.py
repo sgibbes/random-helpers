@@ -24,7 +24,7 @@ def get_min_max(tif):
     min_val = stats[0]
     max_val = stats[1]
 
-    if min_val >= 0 AND max_val < 1000:
+    if min_val >= 0 and max_val < 1000:
         valid_raster = True
     else:
         valid_raster = False

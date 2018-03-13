@@ -1,11 +1,12 @@
 import subprocess
 import os
 import boto
+import glob
 
 import util
 
 def mask_raster(tileid):
-    carbon_pool = 'soil' # options: carbon, bgc, deadwood, soil, litter, totalc
+    carbon_pool = 'litter' # options: carbon, bgc, deadwood, litter, soil, totalc
     tcd_tif = 'Hansen_GFC2014_treecover2000_{}.tif'
     raster = '{0}_{1}.tif'.format(tileid, carbon_pool)
     thresh = 30
@@ -51,7 +52,9 @@ def mask_raster(tileid):
             subprocess.check_call(write_cmd)
 
             # remove tiles
-            for tile in [tcd_tif.format(tileid), raster]:
+            tiles = glob.glob('{}*tif*'.format(tileid))
+
+            for tile in tiles:
                 os.remove(tile)
     else:
         print "already exists"
