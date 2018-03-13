@@ -3,6 +3,7 @@ from boto.s3.connection import S3Connection
 conn = S3Connection(host="s3.amazonaws.com")
 bucket = conn.get_bucket('gfw-files')
 
+from osgeo import gdal
 
 
 def check_output_exists(tileid, carbon_pool):
@@ -23,9 +24,9 @@ def get_min_max(tif):
     min_val = stats[0]
     max_val = stats[1]
 
-    if min_val < 1000 < max_val:
+    if min_val >= 0 AND max_val < 1000:
         valid_raster = True
     else:
-        valid_rater = False
+        valid_raster = False
 
     return valid_raster
