@@ -6,6 +6,7 @@ import glob
 import util
 
 def mask_raster(tileid):
+    print tileid
     carbon_pool = 'litter' # options: carbon, bgc, deadwood, litter, soil, totalc
     tcd_tif = 'Hansen_GFC2014_treecover2000_{}.tif'
     raster = '{0}_{1}.tif'.format(tileid, carbon_pool)
@@ -33,7 +34,7 @@ def mask_raster(tileid):
             outfile = '--outfile={}'.format(raster_threshed)
 
             cmd = ['gdal_calc.py', '-A', tcd_tif.format(tileid), '-B', raster.format(tileid), '--cal={}'.format(calc)]
-            cmd += ['NoDataValue=255', '--co', 'COMPRESS=LZW', '--outfile={}'.format(raster_threshed)]
+            cmd += ['NoDataValue=0', '--co', 'COMPRESS=LZW', '--outfile={}'.format(raster_threshed)]
 
             print "calculating..."
             subprocess.check_call(cmd)
