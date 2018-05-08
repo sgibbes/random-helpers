@@ -12,7 +12,7 @@ def main():
     args = parser.parse_args()
     for mosaic in ['tcd', 'area', 'loss', 'emissions']:
         print "building mosaic for {}".format(mosaic)
-        path_dict = {'tcd': r'S:\treecoverdensity_2000', 'area': r'S:\area_tiles', 'loss': r'S:\lossdata_2001_2014', 'emissions': r'S:\biomass\final_tiles_080917'}
+        path_dict = {'tcd': r'S:\treecoverdensity_2000', 'area': r'S:\area_tiles', 'loss': r'S:\lossdata_2001_2014', 'biomass': r'S:\biomass'}
         out_cs = arcpy.SpatialReference(4326)
         arcpy.CreateMosaicDataset_management (args.geodatabase, mosaic, out_cs)
 
@@ -22,6 +22,6 @@ def main():
         path_to_files = path_dict[mosaic]
 
         arcpy.AddRastersToMosaicDataset_management(mosaic_name, rastype, path_to_files)
-        
+
 if __name__ == "__main__":
     main()
