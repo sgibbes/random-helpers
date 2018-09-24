@@ -10,7 +10,7 @@ def main():
 
 
     args = parser.parse_args()
-    for mosaic in ['tcd', 'area', 'loss', 'emissions']:
+    for mosaic in ['tcd', 'area', 'loss', 'biomass']:
         print "building mosaic for {}".format(mosaic)
         path_dict = {'tcd': r'S:\treecoverdensity_2000', 'area': r'S:\area_tiles', 'loss': r'S:\lossdata_2001_2014', 'biomass': r'S:\biomass'}
         out_cs = arcpy.SpatialReference(4326)
