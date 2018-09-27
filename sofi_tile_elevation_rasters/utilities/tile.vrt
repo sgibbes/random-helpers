@@ -1,0 +1,560 @@
+<VRTDataset rasterXSize="172800" rasterYSize="76800">
+  <SRS>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform> -1.8000013888888890e+02,  2.0833333333333342e-03,  0.0000000000000000e+00,  8.9999861111111116e+01,  0.0000000000000000e+00, -2.0833333333333342e-03</GeoTransform>
+  <VRTRasterBand dataType="Int16" band="1">
+    <NoDataValue>-32768</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N000E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="86400" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N030E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="100800" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N030W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="72000" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N060E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="115200" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N090E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="129600" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N090W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="43200" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N120E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="144000" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N120W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="28800" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N150E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="158400" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10N180W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="0" yOff="28800" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S000E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="86400" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S030E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="100800" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S030W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="72000" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S060E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="115200" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S060W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="57600" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S090E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="129600" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S090W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="43200" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S120E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="144000" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S120W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="28800" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S150E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="158400" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S150W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="14400" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../10S180W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="0" yOff="38400" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N000E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="86400" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N030E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="100800" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N030W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="72000" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N060E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="115200" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N060W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="57600" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N090E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="129600" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N090W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="43200" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N120E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="144000" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N120W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="28800" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N150E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="158400" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30N150W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="14400" yOff="19200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S000E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="86400" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S030E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="100800" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S030W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="72000" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S060W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="57600" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S090E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="129600" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S090W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="43200" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S120E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="144000" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S150E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="158400" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S150W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="14400" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../30S180W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="0" yOff="48000" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N000E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="86400" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N030E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="100800" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N030W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="72000" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N060E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="115200" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N060W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="57600" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N090W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="43200" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N120E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="144000" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N150E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="158400" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N150W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="14400" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50N180W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="0" yOff="9600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S000E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="86400" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S030E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="100800" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S030W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="72000" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S060E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="115200" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S060W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="57600" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S090E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="129600" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S090W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="43200" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S120E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="144000" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S150E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="158400" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../50S180W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="0" yOff="57600" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../70N060W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="57600" yOff="0" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../70S000E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="86400" yOff="67200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../70S060E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="115200" yOff="67200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../70S060W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="57600" yOff="67200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../70S090W_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="43200" yOff="67200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">../70S150E_rc.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="14400" RasterYSize="9600" DataType="Int16" BlockXSize="128" BlockYSize="128" />
+      <SrcRect xOff="0" yOff="0" xSize="14400" ySize="9600" />
+      <DstRect xOff="158400" yOff="67200" xSize="14400" ySize="9600" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>
